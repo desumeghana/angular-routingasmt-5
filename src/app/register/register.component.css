@@ -1,0 +1,15 @@
+label,input{
+    padding: 10px;
+}
+button{
+    font-size: large;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+label{
+    font-size: 15px;
+}
+input{
+    box-shadow: 0.5px 0.5px 5px gray;
+}

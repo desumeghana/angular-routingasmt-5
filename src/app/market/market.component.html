@@ -1,0 +1,13 @@
+<div class="mt-3 d-flex gap-5 flex-wrap justify-content-evenly">
+    <div *ngFor="let i of productobj.productdetails">
+        <div class="card text-center" style="width: 14rem;">
+            <img [src]="i.image" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">{{i.title}}</h3>
+              <h5>Price : {{i.price}}</h5>
+              <h5>Rating : {{i.rating}}</h5>
+             <button class="btn btn-primary" (click)="addtocart(i)">Add to Cart</button>
+            </div>
+          </div>
+    </div>
+</div>

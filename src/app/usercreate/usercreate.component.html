@@ -1,0 +1,18 @@
+<div  style="margin-left:20%; margin-right:20%;" class="border border-secondary">
+    <form class="p-3" (submit)="createUser()" [formGroup]="profileform">
+      <div class="d-flex gap-2">
+        <label for="name" class="fw-bold">Name:</label>
+        <input type="text" class="form-control"  formControlName="name">
+      </div><br>
+      <div class="d-flex gap-2">
+        <label for="email" class="fw-bold">Email:</label>
+        <input type="text"  class="form-control"  formControlName="email">
+      </div><br>
+      <div class="d-flex gap-2">
+        <label for="password" class="fw-bold">Password:</label>
+        <input type="password"  class="form-control"  formControlName="password">
+      </div><br>
+      <button class="btn btn-primary d-block mx-auto">Create</button>
+    </form>
+</div> 
+

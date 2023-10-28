@@ -1,0 +1,10 @@
+<div class="d-block mx-auto p-2" style="width: 40%;height:100%;box-shadow: 0.5px 0.5px 15px gray;">
+    <img class="card-img-top"[src]="newproduct?.image"
+    style="width:250px;height:200px;display: block;margin:auto;" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="fw-bold text-center">{{newproduct?.title}}</h3>
+      <p class="card-text text-center"><b>Price :</b>{{newproduct?.price}}</p>
+      <p class="card-text text-center"><b>Rating :</b>{{newproduct?.rating}}</p>
+      <button routerLink="/products" class="d-block mx-auto btn btn-primary">OK</button>
+    </div>
+  </div>

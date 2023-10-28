@@ -1,0 +1,27 @@
+<h2 class="text-center mt-3 fw-bold">Products</h2>
+<div class="mx-5 my-3 border border-secondary">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr class="fw-bold">
+        <th>Id</th>
+        <th>Image</th>
+        <th>ProductName</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of productobj.productdetails">
+        <td>{{i.id}}</td>
+        <td><img src="{{i.image}}"  width="60vw" height="60vh" alt=""></td>
+        <td>{{i.title}}</td>
+        <td>₹{{i.price}}</td>
+        <td><button routerLink="/products/view/{{i.id}}" class="btn btn-primary">View</button></td>
+        <td><button routerLink="/products/edit/{{i.id}}" class="btn btn-primary">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<button id="create" routerLink="/products/create"  class="btn btn-primary d-block mx-auto">Create +</button><br>
+<router-outlet></router-outlet>
+
+
